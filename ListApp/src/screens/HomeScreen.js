@@ -9,8 +9,6 @@ const HomeScreen = ({ navigation }) => {
   const items = useSelector(state => state.items);
   const dispatch = useDispatch();
 
-  console.log("items", items)
-
   useEffect(() => {
     loadItems();
   }, []);
